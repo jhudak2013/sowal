@@ -1,0 +1,62 @@
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {clear: both;}
+
+.clearfix {*zoom: 1;}
+
+.prettycheckbox,
+.prettyradio {
+	display: inline-block;
+	padding:0;
+	margin: 5px 20px 0 0;
+}
+
+.prettycheckbox a,
+.prettyradio a{
+	width: 8px;
+	height: 8px;
+	background: url('../img/form-radio-sprite.png') center right;
+	display: block;
+	cursor: pointer;
+	margin:0;
+}
+
+.prettyradio a {background-position: center right;}
+
+.prettycheckbox a:focus,
+.prettyradio a:focus {outline: 0 none;}
+
+.prettycheckbox a:focus{background-position: center left;}
+.prettyradio a:focus{background-position: center left;}
+
+.prettycheckbox a.checked{ background-position: center left; }
+.prettyradio a.checked { background-position: center left; }
+
+.prettycheckbox a.checked:focus{ background-position: center left; }
+.prettyradio a.checked:focus { background-position: center left; }
+
+.prettycheckbox label,
+.prettyradio label {
+  display: block;
+  float: left;
+  margin: 6px 5px;
+  cursor: pointer;
+}
+
+.prettycheckbox.disabled a,
+.prettyradio.disabled a,
+.prettycheckbox.disabled label,
+.prettyradio.disabled label{
+  cursor:not-allowed;
+}
+
+.prettycheckbox.disabled a {
+  background-position: 0 -240px;
+}
+
+.prettyradio.disabled a {
+  background-position: 0 -270px;
+}
